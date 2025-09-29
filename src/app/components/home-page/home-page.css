@@ -117,6 +117,12 @@
     width: 65%;
     height: auto;
     margin-bottom: 75px;
+
+    transition: 2.5s ease-in-out;
+}
+
+.project-container:hover {
+    box-shadow: 0px 0px 50px #f5430a, 0px 20px 50px #f20057;
 }
 
 .project-header-wrapper {
@@ -205,3 +211,50 @@
     width: 600px;
     height: auto;
 }   
+
+.divider {
+    border: none;
+    height: 1.5px;
+    /* background-color: #8D99AE; */
+    background: linear-gradient(to bottom right, transparent, #f20057, #f5430a, transparent);
+    opacity: 10%;
+    margin: 5rem 0;
+}
+
+/* Blog section */
+
+.blog-header-wrapper {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-header {
+    font-size: 50px;
+}
+
+.blog-sub-header {
+    color: #8D99AE;
+    font-size: 25px;
+    margin: 5px;
+}
+
+/* About me section*/
+
+.aboutme-header-wrapper {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutme-header {
+    font-size: 50px;
+}
+
+.aboutme-sub-header {
+    color: #8D99AE;
+    font-size: 25px;
+    margin: 5px;
+}
