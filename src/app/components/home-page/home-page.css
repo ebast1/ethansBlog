@@ -55,7 +55,7 @@
     font-size: 17px;
     font-weight: 650;
 
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 
     margin-left: 10px;
     margin-right: 10px; 
@@ -81,7 +81,7 @@
     border: 1px solid #8D99AE;
     background-color: transparent;
 
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 
     margin-left: 10px;
     margin-right: 10px; 
@@ -118,7 +118,7 @@
     height: auto;
     margin-bottom: 75px;
 
-    transition: 2.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .project-container:hover {
@@ -257,4 +257,47 @@
     color: #8D99AE;
     font-size: 25px;
     margin: 5px;
+}
+
+/* Socials icons section*/
+
+.social-icons-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.social-icons-text {
+    grid-area: 1/1/2/4;
+    color: #8D99AE
+}
+
+.social-icons-image {
+    height: 40px;
+    width:  40px;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.75s ease-in-out;
+}
+
+.insta {
+    grid-area: 2/1/3/2;
+}
+
+.linkedin {
+    grid-area: 2/2/3/3;
+}
+
+.dribbble {
+    grid-area: 2/3/3/4;
+}
+
+.social-icons-image:hover {
+    box-shadow: 0px 8px 40px #f20057, 0px 8px 40px #f5430a ;
 }
