@@ -212,13 +212,14 @@
     height: auto;
 }   
 
+/* divider section */
+
 .divider {
     border: none;
     height: 1.5px;
-    /* background-color: #8D99AE; */
-    background: linear-gradient(to bottom right, transparent, #f20057, #f5430a, transparent);
     opacity: 10%;
     margin: 5rem 0;
+    z-index: -1;
 }
 
 /* Blog section */
@@ -259,7 +260,27 @@
     margin: 5px;
 }
 
-/* Socials icons section*/
+/* Footer section */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-color: #101010;
+}
+
+.contact-wrapper {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 65%;
+}
+
+.contact-text {
+    color: #8D99AE;
+}
 
 .social-icons-wrapper {
     display: grid;
@@ -268,9 +289,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
-    margin-left: 45%;
-    margin-right: 45%;
+
+    margin-right: 65%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
 }
 
 .social-icons-text {
@@ -300,4 +322,53 @@
 
 .social-icons-image:hover {
     box-shadow: 0px 8px 40px #f20057, 0px 8px 40px #f5430a ;
+}
+
+/* Carousel section */
+
+.carousel {
+    display: flex;
+    gap: 8px;
+    padding: 30px;
+
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    transition: 1s ease-in-out;
+}
+
+.carousel-item:hover {
+    box-shadow: 0px 0px 20px #f5430a, 0px 0px 20px #f20057;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 40%;
+    height: 50vh;
+
+    border: 5px solid #161616;
+    background-color: #191919;
+    border-radius: 50px;
+
+    scroll-snap-align: center;
+
+    transition: 1.5s ease-in-out;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
 }
