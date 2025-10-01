@@ -10,8 +10,8 @@
             <h2 class="text2">a Software Developer</h2>
             <p class="text3">Follow me on my journey to become a better programmer and designer</p>
             <span class="hero-buttons">
-                <button class="connect">Let's Connect</button>
-                <button class="explore-work">Explore my work</button>
+                <button class="connect" (click)="showAbout()">Let's Connect</button>
+                <button class="explore-work" (click)="showProjects()">Explore my work</button>
             </span>
         </div>
     </div>
@@ -52,6 +52,10 @@
         </div>
     </div>
 
+    <div class="show-more-wrapper">
+        <button class="show-more" (click)="showProjects()">Show More</button>
+    </div>
+
     <hr class="divider">
 
     <div class="blog-header-wrapper">
@@ -77,26 +81,4 @@
         </p>
     </div> -->
 
-    <footer class="footer-container">
-        <div class="contact-wrapper">
-            <h3 class="contact-text">You can contact me here:</h3>
-            <p class="contact-text">ethanbast13@gmail.com</p>
-            <p class="contact-text">+1 734-363-4930</p>
-        </div>
-
-        <div class="social-icons-wrapper">
-            <h3 class="social-icons-text">You can follow me on:</h3>
-            <a class="instagram" href="https://www.instagram.com/ethanbast_/" target="_blank">
-                <img class="social-icons-image" src="assets/icons/insta.svg" alt="Instagram">
-            </a>  
-
-            <a class="linkedin" href="https://www.linkedin.com/in/ethanbast/" target="_blank">
-                <img class="social-icons-image" src="assets/icons/linkedin.svg" alt="LinkedIn">
-            </a> 
-
-            <a class="dribbble" href="https://dribbble.com/ebast13" target="_blank">
-                <img class="social-icons-image" src="assets/icons/dribbble.svg" alt="Instagram">
-            </a>
-        </div>
-    </footer>  
 </div>
