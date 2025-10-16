@@ -1,0 +1,115 @@
+ .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 10vh;
+
+    color: #8D99AE;
+
+ }
+
+.aboutMe-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin: 100px;
+}
+
+.aboutMe-picture {
+    grid-area: 1 / 1 / 6 / 2;
+
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMe-image {
+    border-radius: 25px;
+    border: 5px solid #161616;
+    background-color: #191919;
+
+    color: #8D99AE;
+
+    width: 600px;
+    height: 750px;
+}
+
+.aboutMe-section {
+    margin: 50px;
+    text-align: start;
+}
+
+.aboutMe-header {
+    grid-area: 1 / 2 / 2 / 3;
+
+    color: white;
+    font-size: 75px;
+}
+
+.aboutMe-sub-header {
+    grid-area: 2 / 2 / 2 / 3;
+
+    background-image: linear-gradient(to bottom right, #f20057, #f5430a);
+    color: transparent;
+    background-clip: text;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.aboutMe-description {
+    grid-area: 3 / 2 / 4 / 3;
+
+    color: #8D99AE;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.aboutMe-skills {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.skills-image {
+    height: 50px;
+    width:  50px;
+
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    grid-area: 5 / 2 / 6 / 3;
+
+    font-family: 'Rubik', sans-serif;
+    color: #8D99AE;
+    font-size: 17px;
+    border-radius: 11px;
+    border: 1px solid #8D99AE;
+    background-color: transparent;
+
+    transition: 1s ease-in-out;
+
+    margin-top: 50px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 48px;
+    padding-left: 48px;
+}
+
+.contact-button:hover {
+    color: white;
+    border-color: white;
+
+    cursor: pointer;
+}
+
+.contact-button:active {
+    scale: 0.95;
+}
