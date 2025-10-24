@@ -35,8 +35,10 @@
 
     color: #8D99AE;
 
-    width: 600px;
-    height: 750px;
+    /* width: 600px;
+    height: 750px; */
+    width: auto;
+    height: 695px;
 }
 
 .aboutMe-section {
