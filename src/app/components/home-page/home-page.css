@@ -122,7 +122,8 @@
 }
 
 .project-container:hover {
-    box-shadow: 0px 0px 50px #f5430a, 0px 20px 50px #f20057;
+    box-shadow: 0px 0px 50px #0e0e0e, 0px 20px 50px #141414;
+    cursor: pointer;
 }
 
 .project-header-wrapper {
@@ -263,7 +264,6 @@
     display: grid;
     justify-content: center;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .blog-header {
@@ -273,7 +273,9 @@
 .blog-sub-header {
     color: #8D99AE;
     font-size: 25px;
+    font-weight: 400;
     margin: 5px;
+    margin-bottom: 15px;
 }
 
 /* About me section*/
@@ -309,6 +311,9 @@
     -ms-overflow-style: none;
 
     transition: 1s ease-in-out;
+
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .carousel-item:hover {
@@ -342,4 +347,81 @@
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     font-weight: bold;
+}
+
+.test {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #191919;
+
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.red {
+    background: #f20057;
+}
+
+.orange {
+    background: #f5430a;
+}
+
+.gray {
+    background: #141414;
+}
+
+.blue {
+    background: #2274A5;
+}
+
+.yellow {
+    background: #F1C40F;
+}
+
+.black {
+    background: #0e0e0e;
+}
+
+.spacer {
+    aspect-ratio: 900/320;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.layer1 {
+    background-image: url('/assets/wave-haikei-3.svg');
+    margin-bottom: -1px;
+}
+
+.layer2 {
+    background-image: url('/assets/layered-waves-haikei.svg');
+}
+
+.layer3 {
+    background-image: url('/assets/stacked-waves-haikei-2.svg');
+    margin: -1px;
+}
+
+.layer4 {
+    background-image: url('/assets/wave-haikei-4.svg');
+    margin-bottom: -1px;
+}
+
+.layer5 {
+    background-image: url('/assets/layered-waves-haikei-2.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
 }

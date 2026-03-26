@@ -4,6 +4,8 @@ import { HomePage } from './components/home-page/home-page';
 import { Projects } from './components/projects/projects';
 import { Blog } from './components/blog/blog';
 import { AboutMe } from './components/about-me/about-me';
+import test from 'node:test';
+import { TestPage } from './components/test-page/test-page';
 
 export const routes: Routes = [
 
@@ -12,5 +14,6 @@ export const routes: Routes = [
     {path: 'blog', component: Blog},
     {path: 'projects', component: Projects},
     {path: 'aboutMe', component: AboutMe},
+    {path: 'testPage', component: TestPage},
 ];
 
